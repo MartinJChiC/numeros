@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 50px auto;
+}
+
+.statistic-box {
+  text-align: center;
+  width: 30%;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.statistic-box h2 {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-weight: 80;
+}
+
+.statistic-box span {
+  font-size: 60px; /* Tamaño de fuente más grande */
+  margin-left: 20px; /* Margen izquierdo regular */
+  font-weight: 700;
+}
+
+.statistic-box hr {
+  border: 2px solid;
+  margin-top: 10px;
+}
+
+#projects hr {
+  border-color: #ff6347; /* Tomato */
+}
+
+#hours hr {
+  border-color: #00ced1; /* Dark Turquoise */
+}
+
+#clients hr {
+  border-color: #ffd700; /* Gold */
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    width: 100%; /* Ajustar el ancho al 100% en dispositivos móviles */
+    gap: 1rem;        
+  }
+  
+
+  
+  
+  
+  .statistic-box {
+    width: calc(50% - 20px); /* Ancho de las cajas para ocupar el 50% del ancho menos el espacio del margen */
+  }
+}
+
+@media screen and (max-width: 430px) {
+
+  .container {
+    display: block;
+  }
+
+  .statistic-box {
+    width: calc(100% - 40px); /* Ancho de las cajas para ocupar todo el ancho menos el espacio del margen */
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .statistic-box {
+    width: calc(100% - 20px); /* Ancho de las cajas para ocupar todo el ancho menos el espacio del margen */
+  }
+}
